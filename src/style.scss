@@ -1,0 +1,117 @@
+// font style 
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+// register form box
+.formContainer {
+    background-image: url('./images/blueSky.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // styling child within parent to avoid conflicts
+    .formWrapper {
+        background-color: whitesmoke;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo {
+            color: darkblue;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title {
+            color: darkblue;
+            font-size: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                background-color: whitesmoke;
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid lightblue;
+
+                &::placeholder {
+                    color: darkgray;
+                }
+            }
+
+            button {
+                background-color: #3DD1E7;
+                border: 0 solid #E5E7EB;
+                box-sizing: border-box;
+                color: #000000;
+                display: flex;
+                font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 1rem;
+                font-weight: 700;
+                justify-content: center;
+                line-height: 1.75rem;
+                padding: .75rem 1.65rem;
+                position: relative;
+                text-align: center;
+                text-decoration: none #000000 solid;
+                text-decoration-thickness: auto;
+                width: 100%;
+                max-width: 460px;
+                position: relative;
+                cursor: pointer;
+                transform: rotate(-2deg);
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+
+                &:focus {
+                    outline: 0;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border: 1px solid #000000;
+                    bottom: 4px;
+                    left: 4px;
+                    width: calc(100% - 1px);
+                    height: calc(100% - 1px);
+                }
+
+                &:hover::after {
+                    bottom: 2px;
+                    left: 2px;
+                }
+            }
+        }
+
+        p {
+            color: darkblue;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .button {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+    }
+}
