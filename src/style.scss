@@ -47,6 +47,7 @@
                 border: none;
                 width: 250px;
                 border-bottom: 1px solid lightblue;
+                outline: none;
 
                 &::placeholder {
                     color: darkgray;
@@ -146,7 +147,7 @@
         .sidebar {
             // takes up a 3rd of the container 
             flex: 1;
-            background-color: rgb(51, 51, 156);
+            background-color: rgb(51, 51, 107);
 
             .navbar {
                 display: flex;
@@ -195,12 +196,86 @@
 
 
                 }
+
+
+            }
+
+            .search {
+                border-bottom: 1px solid gray;
+
+                .searchForm {
+                    padding: 10px;
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        color: whitesmoke;
+                        outline: none;
+
+                        &::placeholder {
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+
+            .userChat {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                color: whitesmoke;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(1, 1, 79);
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userChatInfo {
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: lightgray;
+                    }
+                }
             }
         }
 
         .chat {
             // takes up 2 3rds of the container 
             flex: 2;
+
+            .chatInfo {
+                height: 50px;
+                background-color: rgb(51, 51, 107);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+            }
+
+            .messages {
+                background-color: whitesmoke;
+                padding: 10px;
+                height: calc(100% - 160px);
+            }
+
+            .input {
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+            }
         }
     }
 }
