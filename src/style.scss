@@ -275,6 +275,28 @@
                 height: 50px;
                 background-color: white;
                 padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: gray;
+                    font-size: 18px;
+
+                    &::placeholder {
+                        color: lightgray;
+                    }
+                }
+
+                .send {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                }
             }
         }
     }
