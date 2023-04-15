@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faImage, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';

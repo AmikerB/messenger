@@ -1,5 +1,6 @@
 import React from 'react';
-import Add from '../images/addAvatar.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Register = () => {
     return (
@@ -13,7 +14,7 @@ const Register = () => {
                     <input type='password' placeholder='password' />
                     <input type='file' id='file' style={{ display: 'none' }} />
                     <label htmlFor='file'>
-                        <img src={Add} alt='' style={{ width: '50px', height: '50px' }} />
+                        <FontAwesomeIcon icon={faUser} style={{ width: '50px', height: '50px' }} />
                         <span>Add an avatar</span>
                     </label>
                     <button>Sign Up</button>
