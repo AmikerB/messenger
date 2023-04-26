@@ -315,6 +315,7 @@
                             background-color: white;
                             padding: 10px 20px;
                             border-radius: 0px 10px 10px 10px;
+                            max-width: max-content;
                         }
 
                         img {
@@ -322,6 +323,7 @@
                         }
                     }
 
+                    // styling for user sending the messages 
                     &.owner {
                         flex-direction: row-reverse;
 
@@ -335,7 +337,6 @@
                                 max-width: max-content;
                             }
                         }
-
                     }
                 }
             }
