@@ -3,12 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Register = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const displayName = e.target[0].value;
+        const email = e.target[1].value;
+        const password = e.target[2].value;
+        const file = e.target[3].files[0];
+
+    }
+
     return (
         <div className='formContainer'>
             <div className='formWrapper'>
                 <span className='logo'>Simple Chat</span>
                 <span className='title'>Register</span>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <input type='text' placeholder='username' />
                     <input type='email' placeholder='email' />
                     <input type='password' placeholder='password' />
