@@ -13,16 +13,16 @@ const Message = () => {
         addDoc(coll, { text: newMessage })
     }
 
-    useEffect(() => {
-        const coll = collection(db, 'messages');
-        const unsubscribe = onSnapshot(coll, (querySnapshot) => {
-            const messages = [];
-            querySnapshot.forEach((doc) => {
-                messages.push(doc.data());
-            })
-            setSavedMessages(messages)
-        })
-    }, [])
+    // useEffect(() => {
+    //     const coll = collection(db, 'messages');
+    //     const unsubscribe = onSnapshot(coll, (querySnapshot) => {
+    //         const messages = [];
+    //         querySnapshot.forEach((doc) => {
+    //             messages.push(doc.data());
+    //         })
+    //         setSavedMessages(messages)
+    //     })
+    // }, [])
 
     return (
         <div>
